@@ -12,6 +12,5 @@ function encontrarMaior() {
  let media = soma/5;
  
  // Exibe o resultado
- alert( "O maior número é: " + maior);
- alert( "A média de todos é: " + media);
+ alert( "A soma de todos os valores é:"+soma+". A média é:"+media+".")
 }
