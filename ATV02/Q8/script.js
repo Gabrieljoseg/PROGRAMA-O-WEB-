@@ -12,5 +12,5 @@ function encontrarMaior() {
  let media = soma/5;
  
  // Exibe o resultado
- alert( "A soma de todos os valores é:"+soma+". A média é:"+media+".")
+ alert( "A soma de todos os valores é:"+soma+". A média é:"+media+".");
 }
