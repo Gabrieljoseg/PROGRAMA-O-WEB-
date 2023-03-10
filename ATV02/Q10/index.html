@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Gerar números inteiros</title>
+    <style>
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Gerar números inteiros</h1>
+    <form>
+      <label for="num1">Número 1:</label>
+      <input type="number" id="num1">
+      <label for="num2">Número 2:</label>
+      <input type="number" id="num2">
+      <button type="button" onclick="gerarNumeros()">Gerar números</button>
+    </form>
+    <script>
+      function gerarNumeros() {
+        // Lê os valores dos campos de input
+        var num1 = parseInt(document.getElementById("num1").value);
+        var num2 = parseInt(document.getElementById("num2").value);
+        
+        // Verifica qual é o menor número
+        var menor = num1 < num2 ? num1 : num2;
+        var maior = num1 > num2 ? num1 : num2;
+        
+        // Gera a lista de números inteiros entre os números informados
+        var numeros = "";
+        for (var i = menor; i <= maior; i++) {
+          numeros += i + " ";
+        }
+        
+        // Exibe a lista de números em um alerta
+        alert("Os números inteiros entre " + menor + " e " + maior + " são: " + numeros);
+      }
+    </script>
+  </body>
+</html>
