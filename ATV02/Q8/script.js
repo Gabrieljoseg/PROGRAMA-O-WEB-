@@ -7,21 +7,9 @@ function encontrarMaior() {
     let num5 = parseInt(document.getElementById("numero 5").value);
 
     // Encontra o maior número
- let maior = num1;
- if (num2 > maior) {
-   maior = num2;
- }
- if (num3 > maior) {
-   maior = num3;
- }
- if (num4 > maior) {
-   maior = num4;
- }
- if (num5 > maior) {
-   maior = num5;
- }
+ let soma = num1 + num2 + num3 + num4 + num5; 
 
- let media = num1 + num2 + num3 + num4 + num5/5;
+ let media = soma/5;
  
  // Exibe o resultado
  alert( "O maior número é: " + maior);
